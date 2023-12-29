@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+:root {
+    --primary-color: #c6c3c3;
+    --second-color: #ffffff;
+    --black-color: #000000;
+}
+
+body {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/285/172/9/sunset-8k-forest-4k-wallpaper-preview.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login_box {
+    position: relative;
+    width: 450px;
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: var(--second-color);
+}
+
+.login-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ececec47, var(--primary-color));
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+
+.login-header span {
+    font-size: 30px;
+    color: var(--black-color);
+}
+
+.login-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+}
+
+.login-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+}
+
+.label {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    font-size: 17px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, var(--primary-color), #9e8a8a);
+    color: var(--black-color);
+    padding: 0 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.input_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input-field {
+    width: 100%;
+    height: 55px;
+    font-size: 23px;
+    background: transparent;
+    color: var(--second-color);
+    padding-inline: 40px 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    outline: none;
+}
+
+#user {
+    margin-bottom: 10px;
+}
+
+/* .label {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 20px;
+    padding: 6px 0;
+    transition: .2s;
+} */
+
+.input-submit {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(45deg, var(--primary-color), #ececec47);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-submit:hover {
+    background: linear-gradient(45deg, #ececec47, var(--primary-color));
+}
+
+
+.input-submit:active {
+    color: red;
+    text-shadow: 2px 2px 3px rgba(255, 0, 0, 0.786);
+}
+
+.register {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.register a {
+    font-weight: 500;
+}
+
+@media only screen and (max-width:564px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .login_box {
+        padding: 7.5em 1.5em 4em 1.5em;
+    }
+}
